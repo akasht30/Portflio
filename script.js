@@ -94,7 +94,5 @@ contactForm.addEventListener('submit', function(e) {
     contactForm.reset();
 });
 
-// Initialize particles.js
-particlesJS.load('particles-js', 'particles-config.json', function() {
-    console.log('Particles.js loaded successfully');
-});
+
+
