@@ -7,6 +7,27 @@
     --nav-bg: rgba(255, 255, 255, 0.9);
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+.resume-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.resume-btn {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.resume-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
 
 .dark-mode {
     --primary-color: #8f94fb;
