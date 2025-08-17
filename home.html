@@ -8,24 +8,35 @@
 </head>
 <body>
     
-    <header>
-        <div class="header-content">
-            <h1 class="animate">Akash T</h1>
-            <p class="subtitle animate delay-1">Computer Science Engineer | Developer</p>
-            <div class="social-links animate delay-2">
-                <a href="mailto:at5815840@gmail.com" class="social-link"><i>Email</i></a>
-                <a href="tel:9704501787" class="social-link"><i>Phone</i></a>
-                <a href="https://www.linkedin.com/in/akash-t-91828a1a1/" class="social-link"><i>LinkedIn</i></a>
-                <a href="https://github.com/akasht30" class="social-link"><i>GitHub</i></a>
-                
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="hero-container">
+            <!-- Left side: text -->
+            <div class="hero-text">
+                <h1 class="animate">Akash T</h1>
+                <p class="subtitle animate delay-1">Computer Science Engineer | Developer</p>
+
+                <div class="social-links animate delay-2">
+                    <a href="mailto:at5815840@gmail.com" class="social-link"><i>Email</i></a>
+                    <a href="tel:9704501787" class="social-link"><i>Phone</i></a>
+                    <a href="https://www.linkedin.com/in/akash-t-91828a1a1/" class="social-link"><i>LinkedIn</i></a>
+                    <a href="https://github.com/akasht30" class="social-link"><i>GitHub</i></a>
+                </div>
+
+                <div class="resume-buttons animate delay-2">
+                    <a href="resume.pdf" download class="resume-btn">⬇ Download Resume</a>
+                    <a href="resume.pdf" target="_blank" class="resume-btn">📄 View Resume</a>
+                </div>
             </div>
-            <div class="resume-buttons animate delay-2">
-    <a href="resume.pdf" download class="resume-btn">⬇ Download Resume</a>
-    <a href="resume.pdf" target="_blank" class="resume-btn">📄 View Resume</a>
-</div>
+
+            <!-- Right side: photo -->
+            <div class="hero-image">
+                <img src="profile.jpg" alt="Akash T" class="profile-pic">
+            </div>
         </div>
     </header>
 
+    <!-- NAVBAR -->
     <nav>
         <div class="nav-container">
             <div class="brand">
@@ -45,13 +56,15 @@
         </div>
     </nav>
 
+    <!-- OBJECTIVE -->
     <section id="objective" class="animate">
         <h2>Career Objective</h2>
         <p>Enthusiastic Computer Science graduate with strong skills in Java, SQL, and backend frameworks. Passionate about building 
-efficient applications, with strengths in problem-solving and teamwork. Eager to contribute as an entry-level developer while 
-continuing to grow professionally. </p>
+        efficient applications, with strengths in problem-solving and teamwork. Eager to contribute as an entry-level developer while 
+        continuing to grow professionally.</p>
     </section>
 
+    <!-- SKILLS -->
     <section id="skills" class="animate delay-1">
         <h2>Technical Skills</h2>
         <div class="skills-container">
@@ -85,15 +98,16 @@ continuing to grow professionally. </p>
         </div>
     </section>
 
+    <!-- PROJECTS -->
     <section id="projects" class="animate delay-2">
         <h2>Projects</h2>
         <div class="projects-carousel">
             <div class="carousel-container">
                 <div class="carousel-track" id="carouselTrack">
-                     <div class="project-card">
+                    <div class="project-card">
                         <div class="project-content">
                             <h3>Portfolio</h3>
-                            <p>Portfolio of me developed by using HTML,CSS and JS which contains my contact details,academic details, projects </p>
+                            <p>Portfolio of me developed by using HTML, CSS and JS which contains my contact details, academic details, and projects.</p>
                             <div class="tags">
                                 <span class="tag">HTML</span>
                                 <span class="tag">CSS</span>
@@ -153,6 +167,7 @@ continuing to grow professionally. </p>
         </div>
     </section>
 
+    <!-- EDUCATION -->
     <section id="education" class="animate delay-1">
         <h2>Education</h2>
         <div class="education-item">
@@ -172,6 +187,7 @@ continuing to grow professionally. </p>
         </div>
     </section>
 
+    <!-- CERTIFICATIONS -->
     <section id="certifications" class="animate delay-2">
         <h2>Certifications</h2>
         <div class="skills-container">
@@ -202,6 +218,7 @@ continuing to grow professionally. </p>
         </div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact" class="animate">
         <h2>Get In Touch</h2>
         <form class="contact-form" id="contactForm">
@@ -221,6 +238,7 @@ continuing to grow professionally. </p>
         </form>
     </section>
 
+    <!-- FOOTER -->
     <footer>
         <div class="social-links">
             <a href="mailto:at5815840@gmail.com" class="social-link"><i>Email</i></a>
@@ -234,7 +252,6 @@ continuing to grow professionally. </p>
     <button class="back-to-top" id="backToTop">↑</button>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="particles-config.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
