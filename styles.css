@@ -7,11 +7,57 @@
     --nav-bg: rgba(255, 255, 255, 0.9);
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+/* ---------------- HERO SECTION ---------------- */
+.hero {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    gap: 40px;
+    flex-wrap: wrap; /* responsive */
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 280px;
+    text-align: left;
+}
+
+.hero-image {
+    flex: 0 0 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-pic {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;   /* keeps logo ratio */
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+    border: none;          /* removes white circle */
+    border-radius: 0;      /* no round shape */
+    box-shadow: none;      /* removes shadow */
+}
+
+/* ---------------- RESUME BUTTONS ---------------- */
 .resume-buttons {
     margin-top: 20px;
     display: flex;
     gap: 15px;
-    justify-content: center;
+    justify-content: flex-start; /* changed from center to align with text */
+    flex-wrap: wrap;
 }
 
 .resume-btn {
@@ -29,6 +75,7 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* ---------------- DARK MODE ---------------- */
 .dark-mode {
     --primary-color: #8f94fb;
     --secondary-color: #4e54c8;
@@ -54,6 +101,7 @@ body {
     overflow-x: hidden;
 }
 
+/* ---------------- HEADER ---------------- */
 header {
     background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
     color: white;
@@ -82,6 +130,7 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* ---------------- NAVBAR ---------------- */
 nav {
     position: relative;
     overflow: hidden;
@@ -97,7 +146,6 @@ nav::before {
     filter: blur(10px);
     z-index: -1;
 }
-
 
 .nav-container {
     display: flex;
@@ -156,6 +204,7 @@ nav::before {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+/* ---------------- SECTIONS ---------------- */
 section {
     padding: 5rem 2rem;
     max-width: 1200px;
@@ -188,6 +237,7 @@ h2:after {
     background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
 }
 
+/* ---------------- SKILLS ---------------- */
 .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -211,6 +261,7 @@ h2:after {
     color: var(--primary-color);
 }
 
+/* ---------------- PROJECTS ---------------- */
 .projects-carousel {
     position: relative;
 }
@@ -282,6 +333,7 @@ h2:after {
     margin: 0 10px;
 }
 
+/* ---------------- EDUCATION ---------------- */
 .education-item {
     background-color: var(--card-bg);
     padding: 2rem;
@@ -300,6 +352,7 @@ h2:after {
     margin-bottom: 0.5rem;
 }
 
+/* ---------------- CONTACT FORM ---------------- */
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
@@ -349,6 +402,7 @@ textarea.form-control {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* ---------------- FOOTER ---------------- */
 footer {
     text-align: center;
     padding: 2rem;
@@ -373,6 +427,7 @@ footer {
     transform: translateY(-5px);
 }
 
+/* ---------------- BACK TO TOP ---------------- */
 .back-to-top {
     position: fixed;
     bottom: 30px;
@@ -397,7 +452,17 @@ footer {
     opacity: 1;
 }
 
+/* ---------------- RESPONSIVE ---------------- */
 @media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .resume-buttons {
+        justify-content: center;
+    }
+
     .nav-container {
         flex-direction: column;
         padding: 1rem;
@@ -422,7 +487,7 @@ footer {
     }
 }
 
-/* Animations */
+/* ---------------- ANIMATIONS ---------------- */
 @keyframes fadeInUp {
     from {
         opacity: 0;
